@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f6f2; /* very light beige */
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a.sale {
+  color: red;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.category.gym {
+  background: url('https://i.ibb.co/j9TdyvGv/gym.jpg') center/cover no-repeat;
+}
+.category.room {
+  background: url('https://i.ibb.co/prfFdCJG/room.jpg') center/cover no-repeat;
+}
+.category.sports {
+  background: url('https://i.ibb.co/Y72YDZDw/sports.jpg') center/cover no-repeat;
+}
+
+.page-content {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.page-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
